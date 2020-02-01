@@ -1,46 +1,46 @@
 /*
 abstract class ParentQueue<T>
 
-        // конструктор
-// постусловие: создана пустая очередь
-        public ParentQueue<T> ParentQueue();
+    // конструктор
+    // постусловие: создана пустая очередь
+    public ParentQueue<T> ParentQueue();
 
-        // команды
-// постусловие: в хвост очереди добавлен новый элемент
-        public void addFront(T value);
+    // команды
+    // постусловие: в хвост очереди добавлен новый элемент
+    public void addFront(T value);
 
-        // предусловие: очередь не пуста;
-// постусловие: из головы очереди удалён элемент
-        public void removeFront();
+    // предусловие: очередь не пуста;
+    // постусловие: из головы очереди удалён элемент
+    public void removeFront();
 
-        // запросы
-// предусловие: очередь не пуста
-        public T getFront(); // получить элемент из головы очереди;
+    // запросы
+    // предусловие: очередь не пуста
+    public T getFront(); // получить элемент из головы очереди;
 
-        public int size(); // текущий размер очереди
+    public int size(); // текущий размер очереди
 
-        // запросы статусов (возможные значения статусов)
-        public int get_getFront_status(); // успешно; очередь пуста
-        public int get_removeFront_status(); // успешно; очередь пуста
+    // запросы статусов (возможные значения статусов)
+    public int get_getFront_status(); // успешно; очередь пуста
+    public int get_removeFront_status(); // успешно; очередь пуста
 
 abstract class Queue<T>: ParentQueue<T>
 
 abstract class Deque<T>: ParentQueue<T>
-// команды
-// постусловие: в голову очереди добавлен новый элемент
-public void addFront(T value);
+    // команды
+    // постусловие: в голову очереди добавлен новый элемент
+    public void addFront(T value);
 
-// предусловие: очередь не пуста;
-// постусловие: из хвоста очереди удалён элемент
-public void removeLast();
+    // предусловие: очередь не пуста;
+    // постусловие: из хвоста очереди удалён элемент
+    public void removeLast();
 
-// запросы
-// предусловие: очередь не пуста
-public T getLast(); // получить элемент из хвоста очереди;
+    // запросы
+    // предусловие: очередь не пуста
+    public T getLast(); // получить элемент из хвоста очереди;
 
-// запросы статусов (возможные значения статусов)
-public int get_getLast_status(); // успешно; очередь пуста
-public int get_removeLast_status(); // успешно; очередь пуста
+    // запросы статусов (возможные значения статусов)
+    public int get_getLast_status(); // успешно; очередь пуста
+    public int get_removeLast_status(); // успешно; очередь пуста
 */
 
 class ParentQueue<T> {
