@@ -115,7 +115,7 @@ class ParentQueue<T> {
         return removeFront_status;
     }
 
-    public Node<T> getHead() {
+    Node<T> getHead() {
         return head;
     }
 
